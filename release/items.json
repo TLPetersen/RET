@@ -41088,5 +41088,16 @@
 		"maxdmg": 175,
 		"stg": 14,
 		"sta": 144
+	},
+	"209560": {
+		"id": 209560,
+		"type": "Mace",
+		"slot": "mainhand",
+		"name": "Hammer of Righteous Fury",
+		"speed": 1.3,
+		"mindmg": 17,
+		"maxdmg": 32,
+		"stg": 3,
+		"sta": 2
 	}
 }

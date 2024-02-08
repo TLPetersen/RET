@@ -95,11 +95,11 @@ public class TalentHandler
                     abilities["judge"].PercentMod += 0.03 * holyTalents[3];
                     break;
                 }
-                case 5:
-                {
-                    abilities.Add("consec",new Ability(8,(stats)=>64+0.336*stats["sp"],5,"holy","Consecration",135,cancrit : false));
-                    break;
-                }
+                // case 5:
+                // {
+                //     abilities.Add("consec",new Ability(8,(stats)=>64+0.336*stats["sp"],5,"holy","Consecration",135,cancrit : false));
+                //     break;
+                // }
                 case 12:
                 {
                     modifiers.Add(("sp_crit",(stats) => holyTalents[12]));
@@ -204,18 +204,18 @@ public class TalentHandler
         }
         if (legs == "sn")
         {
-            abilities.Add("exo", new Ability(15,(stats)=> Ability.GetRandomDouble(225 +stats["sp"]*0.429,253 +stats["sp"]*0.429),2,"holy","Exocism",85));
+            abilities.Add("exo", new Ability(15,(stats)=> Ability.GetRandomDouble(225 +stats["sp"]*0.429,253 +stats["sp"]*0.429),2,"holy","Exorcism",85));
         }
         if (head == "xg")
         {
             cStats["hp_crit"] += 18;
         }else if(head =="xh")
         {
-            try
-            {
-                abilities["consec"].CanCrit = true;
-                abilities["consec"].modCrit += cStats["crit"] + retCritMods;
-            }catch{}
+            // try
+            // {
+            //     abilities["consec"].CanCrit = true;
+            //     abilities["consec"].modCrit += cStats["crit"] + retCritMods;
+            // }catch{}
             try
             {
                 abilities["exo"].modCrit += cStats["crit"]+ retCritMods;

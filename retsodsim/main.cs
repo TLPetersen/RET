@@ -75,7 +75,7 @@ namespace retsodsim
                     {
                         double dmg = 0;
                         double cd = 0;
-                        double Chance = 10; // this assumes 10% proc chance unless otherwise stated.
+                        double Chance = 15; // this assumes 10% proc chance unless otherwise stated.
                         string school = "spell";
                         if (allIds[entry]["proc"].tick != null)
                         {
